@@ -47,7 +47,7 @@ nav i.fa-bars{
     height: 800px;
     width: 800px;
     border-radius: 50%;
-    background: url('images-2/bbv.png');
+    background: url('bbv.png');
     background-color: rgb(224, 224, 224);
     background-position: center;
     background-size: cover;
@@ -351,7 +351,7 @@ nav i.fa-bars{
     margin: 0;
 }
 #fifth-portion .image{
-    background-image: url('images/yellow-chairs.jpg');
+    background-image: url('yellow-chairs.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -391,9 +391,9 @@ nav i.fa-bars{
      height: 200px;
      border: 4px solid var(--primary-color);
 }
-#sixth-portion .i1{background-image: url('images/girl-red-hair.jpg');background-position: right;}
-#sixth-portion .i2{background-image: url('images/boy-t-shirt.jpg');}
-#sixth-portion .i3{background-image: url('images/girl-black-cote.jpg');}
+#sixth-portion .i1{background-image: url('girl-red-hair.jpg');background-position: right;}
+#sixth-portion .i2{background-image: url('boy-t-shirt.jpg');}
+#sixth-portion .i3{background-image: url('girl-black-cote.jpg');}
 #sixth-portion .intro{
     width: 40%;
     text-align: right;
@@ -433,7 +433,7 @@ nav i.fa-bars{
     text-align: center;
 }
 #seventh-portion .img{
-    background-image: url('images/yellow-bg.jpg');
+    background-image: url('yellow-bg.jpg');
     background-position: center;
     background-size: cover;
     height: 250px;
@@ -489,7 +489,7 @@ nav i.fa-bars{
     height: 650px;
 }
 #eighth-portion .container .image{
-    background-image: url('images-2/yellow-shirt-girl.png');
+    background-image: url('yellow-shirt-girl.png');
     background-size: cover;
     background-position: center;
     width: 50%;
