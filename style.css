@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Kdam+Thmor+Pro&family=Montserrat:wght@600;700;800&family=Open+Sans:wght@300;400;500&family=Oregano&family=Oswald:wght@300;600&family=Poppins:wght@500&family=Roboto+Condensed&family=Roboto:wght@100&family=Russo+One&family=Ubuntu&display=swap');
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+:root {
+    /* Define root colors */
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #ffc107;
+    --background-color: #f8f9fa;
+    /* Add more colors as needed */
+  }
+#wrapper{}
+#nav{
+    padding: 0px 100px;
+    border-bottom: 1px solid #dadada;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+nav .logo{
+    width: 60px;
+}
+nav i.fa-bars{
+    font-size: 30px;
+}
+
+/* -----first portion------------- */
+
+#first-portion{
+    background: #4551dd;
+    color: var(--primary-color);
+    padding: 100px 0;
+}
+#first-portion .container{
+    max-width: 1200px;
+    position: relative;
+    margin: 0px auto;
+    height: 900px;
+}
+#first-portion .image{
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    background: url('images-2/bbv.png');
+    background-color: rgb(224, 224, 224);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+#first-portion .strip{
+    background: #4551dd;
+    font-size: 70px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    right: -30%;
+    height: 120px;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+#first-portion .subjects{
+    width:70%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#first-portion .subject{
+    width: 30%;
+    height: 200px;
+    background: var(--background-color);
+    color: var(--primary-color);
+    box-shadow: 0px 0px 3px #bbb;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+#first-portion .subject i{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    background: var(--background-color);
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+/* ---------second portion----------------- */
+
+#second-portion{
+    background: linear-gradient(180deg, goldenrod,gold);
+    color: white;
+    padding: 50px 0;
+}
+#second-portion .container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+.first-text{
+    text-align: center;
+}
+.first-text h1{
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.first-text p{
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px auto;
+}
+.first-container{
+    margin-top: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.first-container>div{
+    width: 30%;
+    padding: 15px;
+    background: white;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+}
+.first-container h3{
+    font-size: 25px;
+    margin: 15px 0;
+    font-family: 'Montserrat';
+}
+.first-container p{
+    color: gray;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+    padding: 0px 10px;
+}
+.first-container a{
+    display: block;
+    width: fit-content;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3px;
+    margin: 10px auto;
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+}
+.first-container img{
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(120deg, var(--primary-color), var(--background-color));
+}
+
+
+/* --------third-portion------ */
+
+#third-portion{
+    background: #4551dd;
+    color: white;
+    padding: 100px 0;
+}
+#third-portion .container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.second-text{
+    text-align: center;
+}
+.second-text h1{
+    font-family: 'Montserrat';
+    font-size: 45px;
+}
+.second-text p{
+    font-size: 18px;
+    font-family: 'Open Sans';
+    margin: 20px 0;
+}
+.second-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+ z-index: 2;
+}
+.second-container::after{
+    content: '';
+    display: block;
+    height: 350px;
+    width: 100vw;
+    background: linear-gradient(to right, goldenrod, gold);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.second-container .box{
+    background: white;
+    width: 30%;
+    padding: 30px;
+    border-radius: 20px;
+}
+.second-container h4{
+    color: #4551dd;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+.second-container p{
+    color: grey;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    margin: 20px 0;
+}
+.second-container i{
+    color: #4551dd;
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+    cursor: pointer;
+}
+
+
+/* fourth portion---------------------------------- */
+
+#fourth-portion{
+    background: #4551dd;
+    color: white;
+    padding: 100px 0px;
+}
+#fourth-portion .container{
+    max-width: 1000px;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+#fourth-portion .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+#fourth-portion .box1>div{
+   margin-bottom: 20px;
+   width: 50%;
+}
+#fourth-portion .box1 h2{
+    font-size: 80px;
+    font-family: 'Montserrat';
+}
+#fourth-portion .box1 p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 0px 0px 20px rgb(66, 66, 66);
+}
+#fourth-portion .box2 {
+    width: 50%;
+    font-family: 'Open Sans';
+}
+#fourth-portion .box2 h5{
+    font-size: 40px;
+    font-weight: 300;
+}
+#fourth-portion .box2 p{
+    font-size: 18px;
+}
+#fourth-portion .box2 button, #fifth-portion .card button{
+    background: #f8b001;
+    color: #4551dd;
+    padding: 18px 57px 19px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    margin-top: 30px;
+    margin-left: 20px;
+    transition: all .5s;
+}
+#fourth-portion .box2 button:hover{
+    background: white;
+    transform: translateY(-20%);
+}
+
+/* fifth-portion ========================= */
+#fifth-portion{
+    padding: 50px 0 100px;
+    background-image: linear-gradient(to bottom, #4551dd 50%, white 50%);
+}
+#fifth-portion .container{
+    max-width: 1200px;
+    height: 800px;
+    margin: 0px auto;
+    position: relative;
+}
+#fifth-portion .card{
+    padding: 30px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 40%;
+    border-radius: 20px;
+    background: white;
+    z-index: 999;
+}
+#fifth-portion .card h1{
+    font-family: 'Montserrat';
+    font-size: 50px;
+}
+#fifth-portion .card p{
+    margin: 30px 0;
+    color: grey;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 1.8;
+    font-style: italic;
+}
+#fifth-portion .card a{
+     color: grey;
+}
+#fifth-portion .card button{
+    margin: 0;
+}
+#fifth-portion .image{
+    background-image: url('images/yellow-chairs.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+/* ---sixth-portion------- */
+
+#sixth-portion{
+    padding: 40px 0;
+}
+#sixth-portion .container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+#sixth-portion .container>div{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;    
+    padding: 20px;
+}
+#sixth-portion .container h6{
+    color: #4551dd;
+    font-family: 'Montserrat';
+    font-size: 22px;
+} 
+
+#sixth-portion .image{
+    background-position: left;
+    background-size: cover;
+    border-radius: 50%;
+     width: 200px;
+     height: 200px;
+     border: 4px solid var(--primary-color);
+}
+#sixth-portion .i1{background-image: url('images/girl-red-hair.jpg');background-position: right;}
+#sixth-portion .i2{background-image: url('images/boy-t-shirt.jpg');}
+#sixth-portion .i3{background-image: url('images/girl-black-cote.jpg');}
+#sixth-portion .intro{
+    width: 40%;
+    text-align: right;
+}
+#sixth-portion .intro p{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    margin-top: 20px;
+}
+#sixth-portion .icon{
+    width: 40%;
+}
+#sixth-portion i{
+    color: #4551dd;
+    font-size: 100px;
+    line-height: 200px;
+}
+#sixth-portion .right-side .icon{
+    text-align: right;
+}
+#sixth-portion .right-side .intro{
+    text-align: left;
+}
+/* ----------seventh-portion============ */
+
+#seventh-portion{
+    padding: 200px 0px 50px;
+    background: #4551dd;
+}
+#seventh-portion .container{
+    background: white;
+    max-width: 1200px;
+    padding: 150px 2% 50px;
+    position: relative;
+    margin: 0px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+#seventh-portion .img{
+    background-image: url('images/yellow-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+#seventh-portion p{
+    color: #4551dd;
+    font-family: 'Montserrat';
+    font-size:40px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+#seventh-portion .box{
+    max-width: 1200px;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0px auto;
+}
+#seventh-portion h6{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+#seventh-portion .box p{
+    color: white;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 30px;
+}
+#seventh-portion a{
+    color: white;
+}
+
+/* ------------eighth-portion------- */
+#eighth-portion{
+    padding: 100px 0;
+}
+#eighth-portion .container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    height: fit-content;
+}
+#eighth-portion .container>div{
+    height: 650px;
+}
+#eighth-portion .container .image{
+    background-image: url('images-2/yellow-shirt-girl.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 700px;
+    box-shadow: 0px 0px 10px rgb(255, 240, 153);
+}
+#eighth-portion .form{
+    width: 40%;
+    padding: 30px;
+    margin: 0px auto;
+}
+.form h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+.form input, textarea{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #dadada;
+    letter-spacing: 1px;
+}
+.form label{
+    margin: 30px 0 20px;
+    display: block;
+    color: #333;
+    font-family: 'Open Sans';
+}
+input[type="checkbox"]{
+    width: fit-content;
+}
+p.terms{
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+.terms a{
+    color: skyblue;
+}
+.form button{
+    margin-top: 30px;
+    width:100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #4551dd;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    #first-portion .strip{
+        font-size: 60px;
+        line-height: 120px;
+        right: -10%;
+        height: 140px;
+        width: 82%;
+    }
+    #first-portion .subjects{
+        width:75%;
+        right: 10%;
+    }
+    .first-container>div{
+        width: 32%;
+    }
+    #third-portion .container{
+        max-width: 991px;
+    }
+    #fourth-portion .container{
+        max-width: 991px;
+    }
+    #fifth-portion .container{
+        max-width: 991px;
+    }
+    #sixth-portion .container{
+        max-width: 991px;
+    }
+    #seventh-portion .container, #seventh-portion .box{
+        max-width: 991px;
+    }
+    #eighth-portion .container{
+        max-width: 991px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #first-portion .container{
+        height: fit-content;
+    }
+    #first-portion .image{
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0px auto;
+        width: 80vw;
+        height: 80vw;
+    }
+    #first-portion .strip{
+        position: static;
+        margin-right: -20px;
+        width: 70%;
+        font-size: 6vw;
+        height: 12vw;
+        line-height: 12vw;
+    }
+    #first-portion .subjects{
+        margin: -30px auto 30px;
+        position: static;
+    }
+    #first-portion .subject{
+        width: 45%;
+        height: 200px;
+    }
+    .first-container{
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+    .first-container>div{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .second-container{
+        gap: 30px;
+        justify-content: center;
+    }
+    .second-container .box{
+        width: 40%;
+    }
+    #fourth-portion .container{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    #fourth-portion .container>div{
+        width: 70%;
+        margin: 0px auto;
+    }
+    #fifth-portion .container{
+        max-width: 769px;
+        height: 1200px;
+    }
+    #fifth-portion{
+        position: relative;
+    }
+    #fifth-portion::after{
+        content: '';
+        width: 100%;
+        height: 65%;
+        background: #4551dd;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    #fifth-portion .image{
+        width: 700px;
+        height: 700px;
+        z-index: 888;
+    }
+    #fifth-portion .card{
+        top: 650px;
+        width: 60%;
+        z-index: 999;
+    }
+
+    #sixth-portion .container{
+        max-width: 769px;
+    }
+    #seventh-portion .container, #seventh-portion .box{
+        max-width: 769px;
+    }
+
+    #eighth-portion .container{
+        width: 90%;
+        flex-direction: column;
+    }
+    #eighth-portion .container .image{
+        width: 80%;
+    }
+    #eighth-portion .container .form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #first-portion .subjects{
+        margin: 30px auto 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    #first-portion .subject{
+        width: 70%;
+        height: 200px;
+    }
+    .first-text h1{
+        font-size: 6vw;
+    }
+    .first-text p{
+        font-size: 3vw;
+    }
+    .first-container{
+        justify-content: center;
+    }
+    .first-container h3{
+        font-size: 5.5vw;
+    }
+    .first-container p{
+        font-size: 3.7vw;
+    }
+    .first-container>div{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .second-container::after{
+        top: 30%;
+        height: 500px;
+    }
+    .second-container .box{
+        width: 80%;
+    }
+
+    #fourth-portion .container>div{
+        width: 70%;
+    }
+    #fourth-portion .container .box1{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    #fifth-portion{
+        padding: 0px 0 50px;
+    }
+    #fifth-portion::after{
+        content: '';
+        width: 100%;
+        height: 50%;
+        background: #4551dd;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    #fifth-portion .container{
+        width: 100%;
+        height: 1100px;
+    }
+
+    #fifth-portion .image{
+        width: 99vw;
+        height: 99vw;
+        left: 0%;
+    }
+    #fifth-portion .card{
+        top: 90vw;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #fifth-portion .card h1{
+       font-size: 7vw;
+    }
+    #fifth-portion .card button{
+       font-size: 3vw;
+    }
+    #sixth-portion .container{
+        width: 90%;
+    }
+    #sixth-portion .intro, #sixth-portion .icon{
+         width: 100%;
+         text-align: right;
+    }
+    #sixth-portion .right-side{
+        flex-direction: column-reverse;
+    }
+    #sixth-portion .right-side .icon{
+        text-align: left;
+    }
+    #sixth-portion .image{
+        margin: 20px auto;
+        height: 30vw;
+        width: 30vw;
+    }
+    #sixth-portion .container>div{
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    #sixth-portion .container>div .icon i{
+        line-height: 10vw;
+        font-size: 10vw;
+    }
+
+    #seventh-portion .img{
+         height: 33vh;
+         width: 33vh;
+    }
+    #seventh-portion .container, #seventh-portion .box{
+        width: 90%;
+    }
+    #seventh-portion .container p{
+        font-size: 6vw;
+    }
+    #seventh-portion .box h6{
+        font-size: 4vw;
+    }
+
+    #eighth-portion .container{
+        width: 100%;
+    }
+    #eighth-portion .container .image{
+        width: 90%;
+    }
+    #eighth-portion .container .form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #fifth-portion .card{
+        top: 90vw;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #fifth-portion .card h1{
+       font-size: 8vw;
+    }
+    #fifth-portion .card button{
+       font-size: 4vw;
+    }
+    #eighth-portion .container .image{
+        width: 96%;
+    }
+    #eighth-portion .container .form{
+        width: 86%;
+    }
+    .form h2{
+        font-size: 10vw;
+    }
+}
